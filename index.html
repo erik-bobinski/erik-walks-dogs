@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik Walks Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Erik Walks Dogs</h1>
+        <p>Contact: <a href="mailto:erikdogwalks@gmail.com">erikdogwalks@gmail.com</a></p>
+    </header>
+
+    <section id="about">
+        <div class="content">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>I'm a student at Stevens Institute of Technology...</p>
+            </div>
+            <img src="./assets/images/about_me.jpg" alt="About Image">
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="content">
+            <div class="text">
+                <h2>Services</h2>
+                <ul>
+                    <li>Dog Walking - $20 per hour</li>
+                    <li>Pet Sitting - $30 per day</li>
+                </ul>
+            </div>
+            <img src="./assets/images/services.jpg" alt="Services Image">
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="content">
+            <div class="text">
+                <h2>What My Clients Say</h2>
+                <blockquote>"Fantastic service! My dog loves them!" - Client Name</blockquote>
+            </div>
+            <img src="./assets/images/testimonial.jpg" alt="Testimonial Image">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Tell me what you're looking for and mention any important details!" required></textarea>
+            <button type="submit">Send Email</button>
+        </form>
+    </section>
+</body>
+</html>
