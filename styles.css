@@ -7,10 +7,38 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Gradient background */
     color: white;
     text-align: center;
-    padding: 1em 0;
+    padding: 1.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 0.5em;
+}
+
+header a {
+    background-color: #81C784;
+    color: white;
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: #4CAF50;
 }
 
 section {
@@ -19,8 +47,14 @@ section {
     margin: auto;
 }
 
-h2 {
+.text h2 {
     color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.text p, ul, blockquote {
+    font-size: 1.25rem;
 }
 
 ul {
@@ -40,10 +74,15 @@ ul {
 }
 
 .content img {
-    max-width: 35%;
+    max-width: 40%;
     height: auto;
     border-radius: 10px;
     border: 2px solid black;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 form input, form textarea, form button {
@@ -57,4 +96,19 @@ button {
     color: white;
     padding: 0.5em;
     border: none;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 0.5em 1em; /* Add padding */
+    font-size: 1rem; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
 }

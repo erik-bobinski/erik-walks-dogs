@@ -16,7 +16,10 @@
         <div class="content">
             <div class="text">
                 <h2>About Me</h2>
-                <p>I'm a student at Stevens Institute of Technology...</p>
+                <p>Hi! I'm a student at Stevens Institute of Technology currently living
+                    in Hoboken, NJ. At home, I take care of two Mini Australian Shepherds -  
+                    I have plenty of experience with dogs! 
+                </p>
             </div>
             <img src="./assets/images/about_me.jpg" alt="About Image">
         </div>
@@ -28,7 +31,7 @@
                 <h2>Services</h2>
                 <ul>
                     <li>Dog Walking - $20 per hour</li>
-                    <li>Pet Sitting - $30 per day</li>
+                    <li>Pet Sitting - $50 per night</li>
                 </ul>
             </div>
             <img src="./assets/images/services.jpg" alt="Services Image">
@@ -39,20 +42,36 @@
         <div class="content">
             <div class="text">
                 <h2>What My Clients Say</h2>
-                <blockquote>"Fantastic service! My dog loves them!" - Client Name</blockquote>
+                <blockquote><i>"Odin misses you so much!"</i></blockquote>
+                <blockquote><i>- Odin's Owner</i></blockquote>
             </div>
-            <img src="./assets/images/testimonial.jpg" alt="Testimonial Image">
+            <img src="./assets/images/testimonial2.png" alt="Testimonial Image">
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit_form" method="POST">
+        <h2>Contact Me</h2>
+        
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzzbvgal" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+          <div style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;" data-lastpass-icon-root=""></div>
+        </form>
+
+        <!-- <form action="submit_form" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Tell me what you're looking for and mention any important details!" required></textarea>
             <button type="submit">Send Email</button>
-        </form>
+        </form> -->
     </section>
 </body>
 </html>
